@@ -8,13 +8,13 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-@WebServlet(name = "Calculator" , urlPatterns = {"/calculate"})
-public class Calculator extends HttpServlet {
+@WebServlet(name = "CalculatorController" , urlPatterns = {"/calculate"})
+public class CalculatorController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String screen = req.getParameter("screen");
         RequestDispatcher requestDispatcher = req.getRequestDispatcher("./");
-        Calculation calculate = new Calculation();
+        Operation calculate = new Operation();
 
         String prefix = calculate.infixToPreFix(screen).toString();
 

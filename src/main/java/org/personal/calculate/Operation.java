@@ -2,7 +2,7 @@ package org.personal.calculate;
 
 import java.util.Stack;
 
-public class Calculation {
+public class Operation {
     static int precedence(char c){
         switch (c){
             case '+':

@@ -5,9 +5,6 @@
     <form name="calc" action="calculate" method="post">
         <div id="container">
             <div id="calculator">
-<%--                <div id="history">--%>
-<%--                    <p id="history-value"></p>--%>
-<%--                </div>--%>
                 <div id="result">
                     <div id="output">
                         <input class="output" id="output-value" readonly name="screen" value="${result}">
