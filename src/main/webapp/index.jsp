@@ -12,7 +12,7 @@
                 </div>
                 <div id="keyboard">
                     <button class="operator" type="button" onclick="calc.screen.value=''" id="clear">C</button>
-                    <button class="operator" type="button" id="backspace">CE</button>
+                    <button class="operator" type="button" onclick="calc.screen.value=''" id="backspace">CE</button>
                     <button class="operator" type="button" id="%">%</button>
                     <button class="operator" type="button" onclick="calc.screen.value+='/'" id="/">&#247;</button>
                     <button class="number" type="button" onclick="calc.screen.value+='7'" id="7">7</button>
